@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:$CRAILS_CMS_PLUGIN_PATH
+
+set -o allexport
+. /usr/share/crails-deploy/$INSTANCE_NAME
+set +o allexport
+
+/usr/local/bin/$BUILD_NAME/tasks/backup/task -o "$BACKUP_DIR"
