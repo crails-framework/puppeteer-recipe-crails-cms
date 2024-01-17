@@ -10,6 +10,8 @@ apt-get install -y software-properties-common
 
 apt-get install -y \
   rsync \
+  ffmpeg \
+  libmagick++-6.q16-8 \
   libboost-date-time$BOOST_VERSION \
   libboost-program-options$BOOST_VERSION \
   libboost-filesystem$BOOST_VERSION \
